@@ -1,0 +1,64 @@
+extends core/_template
+
+append sharedVars
+	- var activeMenu = 'Главная';
+
+block title
+	title=activeMenu
+
+block content
+	.workarea
+		.container
+			.brands
+				._item(style="background-image:url('images/logo1.png')")
+				._item(style="background-image:url('images/logo2.png')")
+				._item(style="background-image:url('images/logo3.png')")
+			.ttl ВЫИГРАЙ
+			.images
+				._item
+					._img
+						img(src="images/img1.png")
+					._ttl PA-GTX1060, 6ГБ
+				._item
+					._img
+						img(src="images/img2.png")
+					._ttl Ethereum
+			.txt.
+				одну из двух карт PA-GTX1060, 6ГБ или криптовалюту Ethereum
+				от MINING.VG на свой защищеный криптокошелек RAISON.AI
+			.participate
+				._ttl Чтобы принять участие:
+				._list
+					._item
+						._num 1
+						._text.
+							Зарегистрируйся и загрузи
+							скан страницы загранпаспорта
+							с фотографией, ФИО, датой
+							рождения
+					._item
+						._num 2
+						._text.
+							12.08 мы разыграем одну карту
+							PA-GTX1060, 6ГБ среди первых
+							зарегестрировавшихся
+							пользователей RAISON.AI
+					._item
+						._num 3
+						._text.
+							20.08 будет разыграна вторая
+							карта и криптовалюта среди всех
+							зарегестрировавшихся
+							пользователей RAISON.AI
+					._item
+						._num 4
+						._text.
+							Приглашай друзей в RAISON.AI
+							с помощью промо-кода в
+							приложении и повысь свои
+							шансы на победу
+			.btns
+				a._btn.-red(href="#") Пройти регистрацию сейчас
+				a._btn.-green(href="#") Напомнить о регистрации позже
+
+	//end workarea
