@@ -73,13 +73,13 @@
   @media screen and (min-width: $w-desktop) {
     font-size: 26px;
     line-height: 40px;
-    margin-bottom: 23px;
+    margin-bottom: 40px;
   }
 }
 .participate{
   margin-bottom: 20px;
   @media screen and (min-width: $w-desktop) {
-    margin-bottom: 52px;
+    margin-bottom: 152px;
   }
   &__ttl{
     text-transform: uppercase;
@@ -91,19 +91,14 @@
     font-weight: $regular;
     @media screen and (min-width: $w-desktop) {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
   &__list{
-    @media screen and (min-width: $w-desktop) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
   }
   &__num{
-    font-size: 92px;
-    line-height: 70px;
+    font-size: 64px;
+    line-height: 23px;
     color: $red;
     position: absolute;
     top: 0;
@@ -111,8 +106,8 @@
     font-weight: $bold;
     font-family: SFUIDisplay, sans-serif;
     @media screen and (min-width: $w-desktop) {
-      font-size: 140px;
-      line-height: 140px;
+      font-size: 90px;
+      line-height: 90px;
     }
   }
   &__text{
@@ -122,38 +117,47 @@
     font-weight: $regular;
     text-align: left;
     position: relative;
-    padding: 10px 10px 0 20px;
+    padding: 0 10px 0 28px;
+    height: 45px;
     @media screen and (min-width: $w-desktop) {
       font-size: 18px;
       line-height: 25px;
-      padding: 38px 0px 0 54px;
+      padding: 28px 0 0 46px;
     }
   }
   &__item{
     position: relative;
-    height: 70px;
+    //height: 70px;
+
     @media screen and (min-width: $w-desktop) {
-      width: 44%;
+      //width: 44%;
       flex: 0 0 auto;
-      height: 140px;
+      height: 20px;
       margin-bottom: 10px;
     }
     &:nth-child(2n){
+      margin-bottom: 10px;
+      @media screen and (min-width: $w-desktop) {
+        margin-bottom: 65px;
+      }
       .participate__num{
         color: $green;
         right: 0;
         left: auto;
-        @media screen and (min-width: $w-desktop) {
-          left: 0;
-          right: auto;
-        }
       }
       .participate__text{
         text-align: right;
-        padding: 10px 20px 0 10px;
+        padding: 0 20px 0 10px;
         @media screen and (min-width: $w-desktop) {
-          padding: 38px 0px 0 54px;
-          text-align: left;
+          padding: 25px 78px 0 10px;
+        }
+      }
+    }
+    &:nth-child(3){
+      .participate__text {
+        @media screen and (min-width: $w-desktop) {
+          padding-left: 73px;
+          padding-top: 19px;
         }
       }
     }
@@ -164,19 +168,22 @@
   justify-content: space-between;
   margin-bottom: 25px;
   @media screen and (min-width: $w-desktop) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   &__btn{
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
     text-align: center;
     border-width: 2px;
     border-style: solid;
-    width: 42%;
+    width: 45%;
     box-sizing: border-box;
-    display: inline-block;
     font-family: SFUIDisplay, sans-serif;
     font-weight: $medium;
+    padding: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width: $w-desktop) {
       font-size: 20px;
       line-height: 43px;
